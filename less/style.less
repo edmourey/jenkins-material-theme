@@ -1,26 +1,26 @@
 @import '../node_modules/jenkins-core-theme/less/functions';
 @import '../node_modules/jenkins-core-theme/less/images';
-@import '../node_modules/jenkins-core-theme/less/codemirror';
+//@import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
 @import 'widgets';
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
-@font-face {
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/userContent/typography/noto-sans-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/userContent/typography/noto-sans-v7-latin-regular.woff') format('woff') /* Modern Browsers */
-}
-
-@font-face {
-  font-family: 'JDSansPro-Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: url('/userContent/typography/JDSansPro-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/typography/JDSansPro-Medium.woff') format('woff') /* Modern Browsers */
-}
+//@font-face {
+//  font-family: 'Noto Sans';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: url('/userContent/typography/noto-sans-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+//       url('/userContent/typography/noto-sans-v7-latin-regular.woff') format('woff') /* Modern Browsers */
+//}
+//
+//@font-face {
+//  font-family: 'JDSansPro-Medium';
+//  font-style: normal;
+//  font-weight: normal;
+//  src: url('/userContent/typography/JDSansPro-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+//       url('/typography/JDSansPro-Medium.woff') format('woff') /* Modern Browsers */
+//}
 
 :not(div.ace_editor) {
   font-family: 'Roboto', sans-serif !important;
@@ -39,7 +39,7 @@ body {
 }
 
 a, a:hover, a:visited, a:link {
-  text-decoration: none !important;
+  //text-decoration: none !important;
   color: @color-link;
   &:hover {
     opacity: 0.75;
@@ -175,8 +175,16 @@ th.pane {
     color: @color-text !important;
 }
 
-a#jenkins-home-link {
-  opacity: 1 !important;
+//a#jenkins-home-link {
+//  opacity: 1 !important;
+//}
+
+#jenkins-home-link {
+  display:none !important
+}
+
+#l10n-footer {
+  display:none !important
 }
 
 table.progress-bar.red td.progress-bar-done {
@@ -244,22 +252,22 @@ table.progress-bar {
 
 }
 
-.console-output .error-inline {
-  color: @color-red;
-}
-
-.console-output, .console-output * {
-  position: relative;
-  font-family: 'Roboto Mono', Menlo, monospace !important;
-  font-size: 14px;
-  background: @console-black;
-  color: @console-white;
-  cursor: text;
-}
-
-.console-output {
-  padding: 10px 20px;
-}
+//.console-output .error-inline {
+//  color: @color-red;
+//}
+//
+//.console-output, .console-output * {
+//  position: relative;
+//  font-family: 'Roboto Mono', Menlo, monospace !important;
+//  font-size: 14px;
+//  background: @console-black;
+//  color: @console-white;
+//  cursor: text;
+//}
+//
+//.console-output {
+//  padding: 10px 20px;
+//}
 
 .ace_editor {
   font: 12px/normal 'Roboto Mono', Menlo, monospace;
@@ -275,7 +283,7 @@ table.progress-bar {
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'jenkins-material-theme v. @@version'
+  content: 'johndeere-material-theme by em42896' //v. @@version'
 }
 
 pre {
