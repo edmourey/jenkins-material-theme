@@ -3,6 +3,8 @@
 @import '../node_modules/jenkins-core-theme/less/codemirror';
 @import 'variables';
 @import 'widgets';
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,300);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,700,500,300);
 
 @font-face {
   font-family: 'Noto Sans';
@@ -21,7 +23,7 @@
 }
 
 :not(div.ace_editor) {
-  font-family: 'Noto Sans', '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, 'sans-serif' !important;
+  font-family: 'Roboto', sans-serif !important;
   outline: none;
 }
 
@@ -30,7 +32,7 @@ body, table, form, td, th, p {
 }
 
 body {
-  font-family: 'Noto Sans', '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, 'sans-serif' !important;
+  font-family: 'Roboto', sans-serif !important;
   font-size: 13px !important;
   line-height: 20px !important;
   background-color: @color-bg;
@@ -208,7 +210,7 @@ table.progress-bar {
 }
 
 #main-panel > pre {
-  font-family: 'Noto Sans', '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, 'sans-serif' !important;
+  font-family: 'Roboto Mono', Menlo, monospace !important;
 }
 
 .yui-button {
@@ -248,7 +250,7 @@ table.progress-bar {
 
 .console-output, .console-output * {
   position: relative;
-  font-family: 'Noto Sans', '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, 'sans-serif' !important;
+  font-family: 'Roboto Mono', Menlo, monospace !important;
   font-size: 14px;
   background: @console-black;
   color: @console-white;
@@ -260,7 +262,7 @@ table.progress-bar {
 }
 
 .ace_editor {
-  font: 12px/normal 'Noto Sans', '-apple-system', BlinkMacSystemFont, 'Helvetica Neue', Arial, 'sans-serif';
+  font: 12px/normal 'Roboto Mono', Menlo, monospace;
 }
 
 [style^="color:gray"] {
@@ -273,7 +275,7 @@ table.progress-bar {
 
 .jenkins_ver:after {
   margin-left: 15px;
-  content: 'afonsof.com/jenkins-material-theme v. @@version'
+  content: 'jenkins-material-theme v. @@version'
 }
 
 pre {
