@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     var pkg = grunt.file.readJSON('package.json');
 
     var colors = {
-        'john-deere-green': '#367c2b'
+        'johndeere': '#367c2b'
     };
 
     var fileCreatorTask = {};
