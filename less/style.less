@@ -65,6 +65,16 @@ a, a:hover, a:visited, a:link {
 //  }
 //}
 
+.task-icon-link[href='/'] {
+  img {
+    //padding: 36px 0 0 36px !important;
+    //filter: brightness(10000);
+    filter: none !important;
+    padding-left: 28.8px;
+    padding-right: 28.8px;
+  }
+}
+
 #header {
   .shadow1();
   //height: 64px;
@@ -308,16 +318,16 @@ pre {
   left: 16px !important;
 }
 
-//.yuimenuitem-selected {
-//  background-color: @color-primary !important;
-//  & > a {
-//    color: @color-white !important;
-//
-//    & > img {
-//      filter: brightness(10000);
-//    }
-//  }
-//}
+.yuimenuitem-selected {
+  background-color: @color-primary !important;
+  & > a {
+    color: @color-white !important;
+
+    & > img {
+      filter: brightness(10000);
+    }
+  }
+}
 
 .build-row-cell .pane {
  .build-controls {
